@@ -9,6 +9,7 @@ while True:
         A, B, C = int(input("Введите 1 число A: ")), int(input("Введите 2 число B: ")), int(input("Введите 3 число C: "))
     except ValueError:
         print("Возникла ошибка")
+        continue
 
     # Ищем медианное число
     if A <= B <= C or C <= B <= A: x = B

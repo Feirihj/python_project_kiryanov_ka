@@ -9,7 +9,8 @@ while True:
         B = int(input("Введите 2 число B: "))
         C = int(input("Введите 3 число C: "))
     except ValueError:
-        print("Возникла ошибка")
+        print("Возникла ошибка, попробуйте снова")
+        continue
 
     # Проверка высказывания
     if A > 0 and B > 0 and C > 0: print("Высказывание истинно! \n")
