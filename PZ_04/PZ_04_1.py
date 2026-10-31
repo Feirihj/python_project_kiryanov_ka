@@ -15,5 +15,7 @@ while True:
         continue
 
     # Вывод степеней числа A от 1 до N
-    for i in range(1, N + 1):
+    i = 1
+    while i < N:
         print(f"{A}^{i} = {A ** i}")
+        i+=1
