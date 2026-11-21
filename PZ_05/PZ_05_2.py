@@ -4,11 +4,24 @@
 
 
 def ShiftLeft3(A,B,C):
+    # Меняем значения местами для выполнения левого циклического сдвига.
     return B,C,A
 
 while True:
     try:
-        
+        # Считываем первый набор вещественных чисел.
+        A1 = float(input("A1: "))
+        B1 = float(input("B1: "))
+        C1 = float(input("C1: "))
+
+        # Считываем второй набор вещественных чисел.
+        A2 = float(input("A2: "))
+        B2 = float(input("B2: "))
+        C2 = float(input("C2: "))
     except:
         print("invalid input")
+
+    # Выводим результат циклического сдвига для обоих наборов.
+    print(ShiftLeft3(A1,B1,C1))
+    print(ShiftLeft3(A2,B2,C2))
     
