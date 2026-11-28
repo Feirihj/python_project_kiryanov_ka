@@ -2,7 +2,7 @@
 def Propis(text):
     count = 0
     for i in text:
-        if 'A' <= i <= 'Z':
+        if i.isupper():
             count +=1
     return count
 
